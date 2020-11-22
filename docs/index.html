@@ -31,9 +31,9 @@
 		var PREFIX_URL = "https://cors-anywhere.herokuapp.com//?https://tranquil-sands-02417.herokuapp.com//";
 		$(document).ready(function() {
 			// Handler for .ready() called.
-			var url = PREFIX_URL + "retrieveLastConversions";
+			var urlStr = PREFIX_URL + "retrieveLastConversions";
 			$.ajax({
-				url: url,
+				url: urlStr,
 				headers: {"Origin": "https://dipina.github.io/Arab2RomanServer/"},
 				success: function(data){
 					var conversions = data.getElementsByTagName("conversion");
