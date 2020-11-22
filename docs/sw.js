@@ -3,7 +3,6 @@ var filesToCache = [
   '/',
   '/index.html',
   '/css/style.css',
-  '/css/style.css',
   '/css/my.css',
   '/css/jquery.mobile-1.1.1.min.css',
   '/js/jquery.min.js',
