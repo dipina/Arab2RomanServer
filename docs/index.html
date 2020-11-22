@@ -28,25 +28,10 @@
 	</script>
 	<script type="text/javascript">
 		//var PREFIX_URL = "https://ancient-beach-2285.herokuapp.com//";
-		var PREFIX_URL = "https://cors-anywhere.herokuapp.com//?https://tranquil-sands-02417.herokuapp.com//";
+		var PREFIX_URL = "https://tranquil-sands-02417.herokuapp.com/";
 		$(document).ready(function() {
 			// Handler for .ready() called.
-			var urlStr = PREFIX_URL + "retrieveLastConversions";
-			$.ajax({
-				url: urlStr,
-				headers: {"Origin": "https://dipina.github.io/Arab2RomanServer/"},
-				success: function(data){
-					var conversions = data.getElementsByTagName("conversion");
-					for (var j=0; j<conversions.length; j++) {
-						var timestamp = conversions[j].getElementsByTagName("timestamp")[0].childNodes[0].nodeValue;
-						var value = conversions[j].getElementsByTagName("value")[0].childNodes[0].nodeValue;
-						var operation = conversions[j].getElementsByTagName("operation")[0].childNodes[0].nodeValue;
-						var result = conversions[j].getElementsByTagName("result")[0].childNodes[0].nodeValue;
-						$("#"+"conversion"+String(j+1))[0].innerHTML = String(timestamp) + ": applying " + operation + " to " + value + ", the result is: " + result; 
-					}		
-				};
-			});
-			/*
+			var url = PREFIX_URL + "retrieveLastConversions";
 			$.get(url, { }, function(data){
 				var conversions = data.getElementsByTagName("conversion");
 				for (var j=0; j<conversions.length; j++) {
@@ -56,7 +41,7 @@
 					var result = conversions[j].getElementsByTagName("result")[0].childNodes[0].nodeValue;
 					$("#"+"conversion"+String(j+1))[0].innerHTML = String(timestamp) + ": applying " + operation + " to " + value + ", the result is: " + result; 
 				}			
-			});*/
+			});
 		});
 		
 		// Checks if a field is a positive number
