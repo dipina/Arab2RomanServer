@@ -1,4 +1,4 @@
-var cacheName = 'Arab2RomanConverter-pwa';
+var cacheName = 'Arab2RomanConverter-pwa2';
 var filesToCache = [
   '/',
   '/index.html',
