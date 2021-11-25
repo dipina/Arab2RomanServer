@@ -3,7 +3,7 @@
 3. Store the contents of this directory under the local copy of your remote repository
 4. Edit file docs/index.html
 	a. Edit the line witht the constant PREFIX_URL. Ensure that it maps to a valid back-end deployed in HEROKU of your app
-		var PREFIX_URL = "https://tranquil-sands-02417.herokuapp.com/";
+		var PREFIX_URL = "https://cryptic-reaches-27527.herokuapp.com/";
 5. Ensure contents are pushed into your remote repository. For example:
 	git add .
 	git commit -m "updated PREFIX_URL variable to point to my back-end"
